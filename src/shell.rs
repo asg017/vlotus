@@ -699,7 +699,8 @@ mod runner_tests {
     #[test]
     fn run_with_cap_caps_oversized_stdout() {
         // Generate ~2 KB of stdout but cap at 64 bytes.
-        let err = run_with_cap("printf '%.0s_' {1..2000}", 64).expect_err("cap fires");
+        // `seq` instead of `{1..2000}` brace expansion: `/bin/sh` is dash on Ubuntu CI.
+        let err = run_with_cap("printf '_%.0s' $(seq 1 2000)", 64).expect_err("cap fires");
         match err {
             ShellError::TooLarge { bytes, cap } => {
                 assert_eq!(cap, 64);
