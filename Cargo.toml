@@ -1,0 +1,33 @@
+[package]
+name = "vlotus"
+version = "0.1.0"
+edition = "2021"
+description = "Vim-style terminal spreadsheet UI with built-in SQLite storage"
+
+[[bin]]
+name = "vlotus"
+path = "src/main.rs"
+
+[dependencies]
+lotus-core = { git = "https://github.com/asg017/liblotus", rev = "43ba14875a9aba081479b74c89ea6fdb3f5b2abc" }
+lotus-datetime = { git = "https://github.com/asg017/liblotus", rev = "43ba14875a9aba081479b74c89ea6fdb3f5b2abc", default-features = false, optional = true, features = ["system-tz"] }
+ratatui = "0.29"
+crossterm = "0.28"
+rusqlite = { version = "0.34", features = ["bundled", "session"] }
+clap = { version = "4", features = ["derive"] }
+arboard = "3"
+thiserror = "2"
+serde_json = "1"
+fallible-streaming-iterator = "0.1"
+open = "5"
+csv = "1"
+
+[features]
+default = ["datetime"]
+datetime = ["dep:lotus-datetime"]
+
+[dev-dependencies]
+insta = "1"
+
+[lints.rust]
+unsafe_code = "deny"

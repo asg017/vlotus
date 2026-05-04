@@ -1,0 +1,17 @@
+---
+source: examples/vlotus/src/snapshots.rs
+assertion_line: 379
+expression: "render(&mut app, 50, 12)"
+---
+┌ Formula ───────────────────────────────────────┐
+│A1:                                             │
+└────────────────────────────────────────────────┘
+┌ test | Four ───────────────────────────────────┐
+│           A            B            C          │
+│   1                                            │
+│   2                                            │
+│   3                                            │
+│   4                                            │
+└────────────────────────────────────────────────┘
+ Sheet1 │ Two │ Three │ Four │ Five │ Six …       
+ -- NORMAL -- A1             Switched to 'Four'

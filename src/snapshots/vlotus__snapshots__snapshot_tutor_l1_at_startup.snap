@@ -1,0 +1,35 @@
+---
+source: examples/vlotus/src/snapshots.rs
+assertion_line: 398
+expression: "render(&mut app, 160, 30)"
+---
+┌ Formula ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│A1: L1: Movement — read this line in the formula bar above, then j to step down through the lesson.                                                           │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌ tutor | L1 Movement ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│           A            B            C            D            E            F            G            H            I            J            K                │
+│   1  L1: Moveme…                                                                                                                                             │
+│   2  Press l th…                                                                                                                                             │
+│   3  Now press …                                                                                                                                             │
+│   4  Arrow keys…                                                                                                                                             │
+│   5  Try moving…                                                                                                                                             │
+│   6                                                                                                                                                          │
+│   7                                                                                                                                                          │
+│   8                                                      TARGET                                                                                              │
+│   9  Once you r…                                                                                                                                             │
+│  10                                                                                                                                                          │
+│  11  Tip: 0 jum…                                                                                                                                             │
+│  12                                                                                                                                                          │
+│  13                                                                                                                                                          │
+│  14                                                                                                                                                          │
+│  15                                                                                                                                                          │
+│  16                                                                                                                                                          │
+│  17                                                                                                                                                          │
+│  18                                                                                                                                                          │
+│  19                                                                                                                                                          │
+│  20                                                                                                                                                          │
+│  21                                                                                                                                                          │
+│  22                                                                                                                                                          │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+ L1 Movement │ L2 Insert │ L3 Pointing │ L4 Counts │ L5 Words │ L6 Sheet jumps │ L7 Viewport │ L8 Visual │ L9 Operators │ L10 Yank paste │ L11 Undo repeat …    
+ -- NORMAL -- A1                                                                                           :q quit  i/a:insert  v:visual  /:search  hjkl:move
